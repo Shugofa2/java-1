@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <title>Assignment</title>
+	   <meta charset="utf-8">
+	   <link rel="stylesheet" href="hi.css">
+       <meta charset="utf-8">
+	</head>
+	<body>
+        <h2>Afghanistan</h2>
+        <div class="container">
+            <div class="images">
+                <img class="img-1" src="img1.jpg" alt="Macca">
+                <img class="img-2" src="img2.jpg" alt="Madina">
+                <img class="img-3" src="img3.jpg" alt="Al-Aqsa">
+                <img class="img-4" src="img4.jpg" alt="Macca">
+            </div>
+            <div class="main" >
+                <img class="main-img" src="img1.jpg" alt="Macca">
+                <p class="caption">Macca</p>
+            </div>
+        </div>
+        <script>
+            console.log("testing")
+            console.log(document.querySelector(".img-1"))
+            document.querySelector(".img-1").onclick = function() {
+                document.querySelector(".main-img").src = document.querySelector(".img-1").src
+                document.querySelector(".main-img").alt = document.querySelector(".img-1").alt
+                document.querySelector(".caption").innerHTML = document.querySelector(".img-1").alt
+            }
+
+            console.log(document.querySelector(".img-2"))
+            document.querySelector(".img-2").onclick = function() {
+                document.querySelector(".main-img").src = document.querySelector(".img-2").src
+                document.querySelector(".main-img").alt = document.querySelector(".img-2").alt
+                document.querySelector(".caption").innerHTML = document.querySelector(".img-2").alt
+            }
+
+            console.log(document.querySelector(".img-3"))
+            document.querySelector(".img-3").onclick = function() {
+                document.querySelector(".main-img").src = document.querySelector(".img-3").src
+                document.querySelector(".main-img").alt = document.querySelector(".img-3").alt
+                document.querySelector(".caption").innerHTML = document.querySelector(".img-3").alt
+            }
+
+            console.log(document.querySelector(".img-4"))
+            document.querySelector(".img-4").onclick = function() {
+                document.querySelector(".main-img").src = document.querySelector(".img-4").src
+                document.querySelector(".main-img").alt = document.querySelector(".img-4").alt
+                document.querySelector(".caption").innerHTML = document.querySelector(".img-4").alt
+            }
+        </script>
+    </body>
+</html>
